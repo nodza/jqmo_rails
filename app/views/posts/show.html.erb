@@ -1,0 +1,13 @@
+<div data-role="header" data-theme="b">
+	<h1><%= @post.title %></h1>
+	<%= link_to 'Edit', edit_post_path(@post), "data-icon" => "edit", "class" => "ui-btn-right" %>
+	<%= link_to 'Home',  root_path, "data-icon" => "home", "class" => "ui-btn-left" %>
+</div>
+<p id="notice"><%= notice %></p>
+<p>
+  <b><%= @post.title %></b>
+</p>
+
+<p>
+  <%= @post.body %>
+</p>
